@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<script src="./assets/js/script.js"></script>
+        <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	<title>LABORATORIO JAVASCRIPT Y AJAX</title>
+
+        <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	
+</head>
+<body>
+
+     <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+
+        <nav id="navbar" class="navbar">
+        <ul>
+            <li><a class="nav-link scrollto active" href="index.html#hero">Inicio</a></li>
+            <li><a class="nav-link scrollto" href="index.html#services">Información</a></li>
+            <li><a class="nav-link scrollto" href="index.html#about">Acerca Mi</a></li>
+            <li><a class="nav-link scrollto" href="index.html#contact">Registro</a></li>  
+            <li><a class="nav-link scrollto" href="#">Laboratorio</a></li>  
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </header><!-- End Header -->
+
+     <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Laboratorio 1 </h1>
+      <h2>Tecnologías JavaScript y AJAX</h2>
+         <div id="demotext">
+            <ul>
+                <li><a  class="btn-scroll scrollto" href="laboratorio.html#EjercicioJavaScript">Ejercicio JavaScript</a></li>
+                <li><a  class="btn-scroll scrollto" href="laboratorio.html#EjercicioAjax">Ejercicio Ajax</a></li>
+            </ul>
+        </div>
+      <a href="#EjercicioJavaScript" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+    </div>
+  </section><!-- End Hero -->
+
+
+     <main id="main">
+
+        <!-- ======= Informacion ======= -->
+        <section id="EjercicioJavaScript" class="EjercicioJavaScript">
+            <div class="contenedor">
+                <article>
+                    <h1>EJERCICIOS JAVASCRIPT</h1>
+                    <p>
+                        Para la realización de este ejercicio se realizó cada script en diferentes archivos y se llamaron a partir de ventanas emergentes y se realizo la conexion con el documento HTML
+                    </p>
+                    <ul>
+                        <li><button id="btn-abrir-popup" class="btn-abrir-popup">Cadena Palindromo</button></li>
+                        <li><button id="btn-abrir-popup2" class="btn-abrir-popup">Numero Mayor</button></li>
+                        <li><button id="btn-abrir-popup3" class="btn-abrir-popup">Cantidad de Vocales de una frase</button></li>
+                        <li><button id="btn-abrir-popup4" class="btn-abrir-popup">Cantidad de cada Vocal de una frase</button></li>
+                    </ul>
+                </article>
+
+                <div class="overlay" id="overlay">
+                    <div class="popup" id="popup">
+                        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                        <h3>Verificador de palíndromos</h3>
+                        <h4>Ingresa la palabra.</h4>
+                        <form action="">
+                            <div class="contenedor-inputs">
+                                <input type="text" id="inputText" placeholder="Ingresa una palabra o frase">
+                                <p id="resultado"></p>
+                                <br>
+                            </div>
+                            <input onclick="verificarPalindromo()" class="btn-submit" value="Verificar" >
+                                
+                        </form>
+                    </div>
+                </div>
+
+                <div class="overlay" id="overlay2">
+                    <div class="popup" id="popup2">
+                        <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                        <h3>Comparador de números</h3>
+                        <h4>Ingresa los numeros</h4>
+                        <form action="">
+                            <div class="contenedor-inputs">
+                                <label for="num1">Primer número:</label>
+                                <input type="number" id="num1">
+                                
+                                <label for="num2">Segundo número:</label>
+                                <input type="number" id="num2">
+                                <p id="resultado2"></p>
+                                <br>
+                            </div>
+                            <input onclick="compararNumeros()" class="btn-submit" value="Comparar">
+                            
+                        </form>
+                    </div>
+                </div>
+
+                <div class="overlay" id="overlay3">
+                    <div class="popup" id="popup3">
+                        <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                        <h3>Contador de vocales</h3>
+                        <h4>Ingresa la frase</h4>
+                        <form action="">
+                            <div class="contenedor-inputs">
+                                <input type="text" id="inputFrase" placeholder="Ingresa una frase">
+                                <p id="resultado3_1"></p>
+                                <p id="resultado3"></p>
+                                <br>
+                            </div>
+                            <input onclick="contarVocales()" class="btn-submit" value="Contar Vocales">
+                            
+                        </form>
+                    </div>
+                </div>
+
+                <div class="overlay" id="overlay4">
+                    <div class="popup" id="popup4">
+                        <a href="#" id="btn-cerrar-popup4" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                        <h3>Contador de vocales</h3>
+                        <h4>Ingresa la frase</h4>
+                        <form action="">
+                            <div class="contenedor-inputs">
+                                <label for="frase">Ingrese una frase:</label>
+                                <input type="text" id="frase"> 
+                                <p id="resultado4"></p>
+                                
+                                <br>
+                            </div>
+                            <input onclick="contarCadaVocal()" class="btn-submit" value="Contar Vocales">
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End javascript-->
+
+        <section id="EjercicioAjax" class="EjercicioAjax"></section>
+            <div class="contenedor">
+                <article>
+                    <h1>EJERCICIOS AJAX</h1>        
+                    <p>
+                        parrafo 1
+                    </p>
+                    
+                </article>
+
+            <h3>Mostrar Contenidos con Ajax</h3>
+
+            <label for="urlTextbox">URL:</label>
+            <input type="text" id="urlTextbox"><br><br>
+            <button onclick="mostrarContenido()">Mostrar Contenidos</button>
+
+            <h3>Estados de la petición:</h3>
+            <div id="estado">Estado: No iniciada</div>
+
+            <h3>Cabeceras HTTP de la respuesta del servidor:</h3>
+            <pre id="cabeceras"></pre>
+
+            <h3>Código de estado:</h3>
+            <div id="codigoEstado"></div>
+
+            <h3>Contenidos:</h3>
+            <div id="contenidos"></div>
+
+                    
+            </div>
+        </section><!-- End ajax -->
+
+    </main><!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container">
+      <h3>Laboratorio 1</h3>
+      <p>UNIR 2023</p>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Claudia Marcela Cifuentes</span></strong>. 
+      </div>
+      </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  /*<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>	
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script1.js"></script>
+  <script src="./assets/js/script2.js"></script>
+  <script src="./assets/js/script3.js"></script>
+  <script src="./assets/js/script4.js"></script>
+</body>
+</html>

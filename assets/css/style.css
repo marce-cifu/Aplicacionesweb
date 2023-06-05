@@ -2,6 +2,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -404,6 +410,10 @@ color: #d9d9d9;
   text-align: center;
   
   }
+
+
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -1099,3 +1109,45 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+.contenedor article {
+	line-height: 28px;
+}
+
+.contenedor article h1 {
+	font-size: 30px;
+	text-align: left;
+	padding: 50px 0;
+}
+
+.contenedor article p {
+	margin-bottom: 20px;
+}
+
+.contenedor article .btn-abrir-popup {
+	padding: 0 20px;
+	margin-bottom: 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+.contenedor article .btn-abrir-popup:hover {
+	background: #394f97e6;
+}
+
+/* ------------------------- */
