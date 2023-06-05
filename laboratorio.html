@@ -64,10 +64,12 @@
         <section id="EjercicioJavaScript" class="EjercicioJavaScript">
             <div class="contenedor">
                 <article>
-                    <h1>EJERCICIOS JAVASCRIPT</h1>
-                    <p>
-                        Para la realización de este ejercicio se realizó cada script en diferentes archivos y se llamaron a partir de ventanas emergentes y se realizo la conexion con el documento HTML
-                    </p>
+                    <div class="section-title">
+                        <span>EJERCICIOS JAVASCRIPT</span>
+                        <h2>EJERCICIOS JAVASCRIPT</h2>
+                        <p>Para la realización de este ejercicio se realizó cada script en diferentes archivos y se llamaron a partir de ventanas emergentes y se realizo la conexion con el documento HTML
+                        </p>
+                    </div>
                     <ul>
                         <li><button id="btn-abrir-popup" class="btn-abrir-popup">Cadena Palindromo</button></li>
                         <li><button id="btn-abrir-popup2" class="btn-abrir-popup">Numero Mayor</button></li>
@@ -80,7 +82,7 @@
                     <div class="popup" id="popup">
                         <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
                         <h3>Verificador de palíndromos</h3>
-                        <h4>Ingresa la palabra.</h4>
+                        <h4>Ingresa la palabra</h4>
                         <form action="">
                             <div class="contenedor-inputs">
                                 <input type="text" id="inputText" placeholder="Ingresa una palabra o frase">
@@ -156,31 +158,32 @@
         <section id="EjercicioAjax" class="EjercicioAjax"></section>
             <div class="contenedor">
                 <article>
-                    <h1>EJERCICIOS AJAX</h1>        
-                    <p>
-                        parrafo 1
-                    </p>
-                    
-                </article>
+                    <div class="section-title">
+                        <span>EJERCICIOS AJAX</span>
+                        <h2>EJERCICIOS AJAX</h2>
+                        <p>Para la realización de este ejercicio se realizó en un javascript el codigo donde se aplique lo solicitado en el Laboratorio
+                        </p>
+                    </div>
+                </article>    
+                               
+                    <h4>Mostrar Contenidos con Ajax</h4>
 
-            <h3>Mostrar Contenidos con Ajax</h3>
+                    <label for="urlTextbox">URL:</label>
+                    <input type="text" id="urlTextbox"><br><br>
+                    <button class="btn-abrir-popup" onclick="mostrarContenido()">Mostrar Contenidos</button><br><br>
 
-            <label for="urlTextbox">URL:</label>
-            <input type="text" id="urlTextbox"><br><br>
-            <button onclick="mostrarContenido()">Mostrar Contenidos</button>
+                    <h4>Estados de la petición:</h4>
+                    <div id="estado">Estado: No iniciada</div>
 
-            <h3>Estados de la petición:</h3>
-            <div id="estado">Estado: No iniciada</div>
+                    <h4>Cabeceras HTTP de la respuesta del servidor:</h4>
+                    <pre id="cabeceras"></pre>
 
-            <h3>Cabeceras HTTP de la respuesta del servidor:</h3>
-            <pre id="cabeceras"></pre>
+                    <h4>Código de estado:</h4>
+                    <div id="codigoEstado"></div>
 
-            <h3>Código de estado:</h3>
-            <div id="codigoEstado"></div>
-
-            <h3>Contenidos:</h3>
-            <div id="contenidos"></div>
-
+                    <h4>Contenidos:</h4>
+                    <div id="contenidos"></div>
+                
                     
             </div>
         </section><!-- End ajax -->
